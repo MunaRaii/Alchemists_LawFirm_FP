@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta tags for character set and viewport configuration -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Page title -->
+    <title>User Registration</title>
+    
+    <!-- Link to external stylesheet for styling -->
+    <link rel="stylesheet" href="css/register.css">
+</head>
+<body>
+    <!-- User registration form -->
+    <form id="registrationForm">
+        <!-- Input field for name -->
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <!-- Input field for email -->
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <!-- Input field for password -->
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+
+        <!-- Input field to confirm password -->
+        <label for="confirmPassword">Confirm Password:</label>
+        <input type="password" id="confirmPassword" name="confirmPassword" required>
+
+        <!-- Button to trigger registration -->
+        <button type="button" onclick="submitForm()">Register</button>
+
+        <!-- Links for navigation -->
+        <p class="login-link">Already have an account? <a href="signin.html">Log in</a></p>
+        <p class="register-link">Back to main page:  <a href="index.html">Home</a></p>
+
+    <!-- Include JavaScript file for form functionality -->
+    <script src="js/register.js"></script>
+    </form>  
+</body>
+</html>
