@@ -32,7 +32,7 @@ function submitForm() {
     
 
    
-    // Store user information in local storage (not secure for production)
+    // Store user information in local storage
     var user = {
         name: name,
         email: email,
@@ -44,5 +44,5 @@ function submitForm() {
     alert('Registered successfully!');
 
     // Redirect to login page or perform other actions
-    window.location.href = 'headerfooter.html';
+    window.location.href = 'index.html';
 }

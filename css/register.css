@@ -12,8 +12,11 @@ body {
 h1{
     color: #fafafa;
     padding: 20px;
+    text-align: center;
+    font-size: 28px;
   }
 form {
+    width: 40%;
     background-color: #4d4e4d;
     padding: 40px;
     border-radius: 10px;
@@ -71,11 +74,16 @@ p a:hover {
 /* Media queries for tablet and mobile viewports */
 @media only screen and (max-width: 768px) {
     body {
-        align-items: flex-start; /
+        align-items: center; 
     }
 
     form {
-        width: 90%; 
+        width: 70%; 
+        margin-left: 15%;
+        margin-right: 15%;
+    }
+    h1{
+        font-size: 24px;
     }
 }
 
@@ -87,4 +95,9 @@ p a:hover {
     button {
         font-size: 14px; 
     }
+
+    h1{
+        font-size: 22px;
+    }
+
 }
