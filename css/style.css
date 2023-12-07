@@ -193,7 +193,7 @@ h1 {
 
 /* Services CSS */
 
-.containers {
+.service-container {
     min-height: 100vh;
     width: 100%;
     background-color: #121518;
@@ -209,20 +209,20 @@ h1 {
     align-items: center;
 }
 
-h1 {
+.service h1 {
     color: #aa9166;
     font-size: 4rem;
     letter-spacing: 2px;
 }
 
-.cards {
+.service .cards {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
     margin-top: 90px;
 }
 
-.card {
+.service .card {
     height: 300px;
     width: 320px;
     background-color: #aa9166;
@@ -238,7 +238,7 @@ h1 {
 
 }
 
-.card i {
+.service .card i {
     color: rgb(78, 77, 77);
     margin-top: 15px;
     margin-bottom: 20px;
@@ -246,7 +246,7 @@ h1 {
 
 }
 
-.card h2 {
+.service .card h2 {
     color: #fff;
     font-size: 20px;
     font-weight: 600;
@@ -254,7 +254,7 @@ h1 {
 
 }
 
-.card li {
+.service .card li {
     text-align: left;
     width: 100%;
     margin: 12px 0;
@@ -262,14 +262,12 @@ h1 {
     font-size: 12px;
 }
 
-.card:hover {
+.service .card:hover {
     color: black;
     background-color: #aa9166;
     transform: translateY(-8px);
     border-color: #fff;
 }
-
-
 
 @media screen and (max-width:768px) {
     .cards {
@@ -279,7 +277,7 @@ h1 {
 
 }
 
-@media screen and (max-width:480px) {
+@media screen and (max-width:576px) {
     .cards {
         grid-template-columns: repeat(1, 1fr);
 
@@ -290,6 +288,7 @@ h1 {
     }
 
 }
+
 
 /* Footer CSS */
 
