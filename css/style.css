@@ -84,8 +84,8 @@
 }
 
 .carousel .carousel-caption .btn:hover{
-    color: #121518;
     background: #aa9166;
+    color:#121518;
 }
 
 @media (max-width: 768px) {
