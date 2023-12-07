@@ -1,3 +1,16 @@
+/* General CSS */
+
+body {
+    color: #666;
+    background: #fff;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+
+h1{
+    font-weight: 600;
+    color: #121518;
+}
 /* Header CSS */
 
 .navbar .navbar-nav .nav-item a{
@@ -44,7 +57,7 @@
     top: 0;
     left: 0;
     background: rgba(0, 0, 0, .3);
-    z-index: 1;
+    /* z-index: 1; */
 }
 
 .carousel .carousel-caption {
@@ -129,11 +142,63 @@
     animation-duration: 1.5s;
 }
 
+/* About Us CSS */
+
+.about {
+    position: relative;
+    width: 100%;
+    padding: 60px 0;
+}
+
+.about .section-header {
+    margin-bottom: 30px;
+}
+
+.about .about-img {
+    /* position: relative;
+    height: 100%; */
+}
+
+.about .about-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.about .about-text p {
+    font-size: 16px;
+}
+
+.about .about-text a.btn {
+    position: relative;
+    margin-top: 15px;
+    padding: 15px 35px;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #fff;
+    border-radius: 0;
+    background: #aa9166;
+    transition: .3s;
+}
+
+.about .about-text a.btn:hover {
+    color: #121518;
+    background: #aa9166;
+}
+
+@media (max-width: 768px) {
+    .about .about-img {
+        margin-bottom: 30px;
+        height: auto;
+    }
+}
+
 /* Footer CSS */
 
 .footer {
     position: relative;
-    margin-top: 45px;
     padding-top: 180px;
     background: #121518;
     color: #ffffff;
