@@ -1,33 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Set the character encoding for the document -->
     <meta charset="UTF-8">
+
+    <!-- Link to the external stylesheet for styling -->
     <link rel="stylesheet" href="css/book.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">   
+
+    <!-- Set the viewport for responsive design -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Set the title of the document -->
     <title>Book Appointment</title>
+
+    <!-- Link to the external JavaScript file for additional functionality -->
     <script src="js/book.js"></script>
-    
 </head>
 <body>
 
+<!-- Main heading for the page -->
 <h1 style="text-align: center;">Book Your Appointment</h1>
+
+<!-- Form for booking an appointment -->
 <form action="#" method="post" id="appointmentForm">
+    <!-- Input field to select the date -->
     <label for="date">Select Date:</label>
     <input type="date" id="date" name="date" required>
 
+    <!-- Input field to select the time -->
     <label for="time">Select Time:</label>
     <input type="time" id="time" name="time" required>
 
+    <!-- Dropdown menu to select the person to meet -->
     <label for="person">Select Person to Meet:</label>
     <select id="person" name="person" required>
-        <option value="person1">Person 1</option>
-        <option value="person2">Person 2</option>
+        <option value="person1">Ambie Edgar-Chana</option>
+        <option value="person2">Aaron Edgar</option>
     </select>
 
+    <!-- Button to submit the form and book the appointment -->
     <button type="submit">Book Appointment</button>
 </form>
-
-
 
 </body>
 </html>
