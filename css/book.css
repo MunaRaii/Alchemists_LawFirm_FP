@@ -1,34 +1,59 @@
 *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
 
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+    color: #fff;
 }
-
-h1 {
-    text-align: center;
-}
-
 form {
-    max-width: 600px;
-    margin: 0 auto;
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: #4d4e4d;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
-
-label, input, select, button {
+label {
     display: block;
-    margin-bottom: 10px;
+    margin-bottom: 8px;
 }
-
+input, select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+    background-color: #444;
+    color: #fff;
+    border: 1px solid #777;
+    border-radius: 4px;
+}
+input:focus, select:focus {
+    outline: none;
+    border-color: #fff;
+}
 button {
-    background-color: #4CAF50;
-    color: white;
-    padding: 10px;
-    border: none;
+    background-color: #fff;
+      border: 2px solid #fafafa;
+    color:#131313;
+    padding: 14px;
+     border-radius: 6px;
     cursor: pointer;
-}
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+  }
+  button:hover{
+      background-color: black;
+      color: #e9e8e8;
+  
+  }
+
 
 /* Responsive styles for tablet */
 @media only screen and (max-width: 768px) {
