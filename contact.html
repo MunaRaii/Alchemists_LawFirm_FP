@@ -1,0 +1,289 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- CSS Link -->
+    <link rel="stylesheet" href="css/headerfooter.css">
+    <link rel="stylesheet" href="css/contact.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+
+    <title>Contact Form</title>
+
+    
+<script src="js/contact.js"></script>
+</head>
+
+<body>
+    <!-- Header Section -->
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Edgar Chana Law</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Our Team</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">News</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Contact Us</a>
+                    </li>
+                </ul>
+                <div id="loginButtons" class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-but" id="loginButton">
+                        <a class="btn btn-outline-light" href="signin.html">Login</a>
+                    </li>
+                    <li class="nav-but" id="logoutButton" style="display: none;">
+                        <a class="btn btn-outline-light" href="#" onclick="logout()">Logout</a>
+                    </li>
+                </div>
+
+                <p id="welcomeMessage">Welcome, <span id="welcomeName" style="display: none;"></span>!</p>
+
+
+                <script>
+                    // Function to set user information in local storage
+                    function setUserInStorage(user) {
+                        localStorage.setItem('user', JSON.stringify(user));
+                    }
+                
+                    // Function to get user information from local storage
+                    function getUserFromStorage() {
+                        const storedUser = localStorage.getItem('user');
+                        return storedUser ? JSON.parse(storedUser) : null;
+                    }
+                
+                    // Function to handle login
+                    function login() {
+                        var email = document.getElementById('email').value;
+                        var password = document.getElementById('password').value;
+                
+                        // Retrieve user information from local storage
+                        var user = getUserFromStorage();
+                
+                        if (user) {
+                            // Check if email and password match the stored user
+                            if (user.email === email && user.password === password) {
+                                // Redirect to the welcome page with the username as a query parameter
+                                window.location.href = 'headerfooter.html?name=' + encodeURIComponent(user.name);
+                            } else {
+                                alert('Invalid email or password');
+                            }
+                        } else {
+                            alert('User not found. Please register first.');
+                        }
+                    }
+                
+                    // Function to handle logout
+                    function logout() {
+                        // Clear user information in local storage
+                        localStorage.removeItem('user');
+                        // Redirect to the login page after logout
+                        window.location.href = 'headerfooter.html';
+                    }
+                
+                    // Parse the query parameter to get the username
+                    const params = new URLSearchParams(window.location.search);
+                    const name = params.get('name');
+                
+                    // Display the username on the page and toggle login/logout buttons
+                    const welcomeNameElement = document.getElementById('welcomeName');
+                    const welcomeMessageElement = document.getElementById('welcomeMessage');
+                    if (name) {
+                        welcomeNameElement.innerText = name;
+                        welcomeNameElement.style.display = 'inline-block';
+                        welcomeMessageElement.style.display = 'block';
+                        document.getElementById('loginButton').style.display = 'none';
+                        document.getElementById('logoutButton').style.display = 'inline-block';
+                    } else {
+                        welcomeNameElement.style.display = 'none';
+                        welcomeMessageElement.style.display = 'none';
+                        document.getElementById('loginButton').style.display = 'inline-block';
+                        document.getElementById('logoutButton').style.display = 'none';
+                    }
+                </script>
+                
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        
+        <div class="form">
+            <div class="contact-info">
+               <h3 class="title">Lets get in Touch</h3> 
+               <p class="text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                 Mollitia, pariatur distinctio! Dolorem, cumque praesentium temporibus cum
+                  tempora consectetur expedita modi. Possimus sunt explicabo tenetur odit
+                   perferendis minima, recusandae dolorem sequi.
+               </p>
+               <div class="info">
+                <div class="information">
+                    <img src="images/location.png" class="icon" alt="location_img">
+                    <p>Lorem ipsum dolor sit amet consectetur </p>
+                </div>
+
+                <div class="information">
+                    <img src="images/email.png" class="icon" alt="location_img">
+                    <p>fafdaa@gmail.com</p>
+                </div>
+
+                <div class="information">
+                    <img src="images/phone.png" class="icon" alt="location_img">
+                    <p>123-456-789 </p>
+                </div>
+                
+               </div>
+
+               <div class="social-media">
+                <p>Connect With Us:</p>
+                <div class="social-icons">
+                    <a href="#">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+
+                    <a href="#">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+
+                    <a href="#">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+
+                    <a href="#">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                </div>
+               </div>
+            </div>
+            <div class="contact-form">
+
+                <form action="contact.html">
+                    <h3 class="title">Contact US</h3>
+                    <div class="input-container">
+                        <input type="text" name="name" class="input">
+                        <label for="">Username</label>
+                        
+                    </div>
+                    <div class="input-container">
+                        <input type="email" name="email" class="input">
+                        <label for="">Email</label>
+                       
+                    </div>
+                    <div class="input-container">
+                        <input type="tel" name="phone" class="input">
+                        <label for="">Phone</label>
+                       
+                    </div>
+                    <div class="input-container textarea">
+                        <textarea name="message" class="input"></textarea>
+                        <label for="">Message</label>
+                        
+                    </div>
+
+                    <input type="submit" value="Send" class="btn">
+                </form>            
+
+
+            </div>
+        </div>
+
+       
+    </div>  
+
+    <div class="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2884.121325909136!2d-79.29228192522805!3d43.7080276488851!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d4ce7ff32350b3%3A0x58543e6e009ace89!2s593%20Pharmacy%20Ave%2C%20Scarborough%2C%20ON%20M1L%203H1!5e0!3m2!1sen!2sca!4v1700222567065!5m2!1sen!2sca" width="100%" hei style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+    <!-- Footer Section -->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-lg-4">
+                    <div class="footer-about">
+                        <h2>About Us</h2>
+                        <p>
+                            Edgar Chana Law Professional Corporation is a boutique law firm that was founded in 2013 to
+                            provide
+                            high quality estates and trust planning services at more reasonable rates.
+                            <br>
+                            Edgar Chana Law Professional Corporation practices solely in trusts, wills, and estates. The
+                            firm assists
+                            Canada's largest banks and trust companies, financial advisors etc.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-8">
+                    <div class="row">
+                        <div class="col-md-6 col-lg-4">
+                            <div class="footer-link">
+                                <h2>Services </h2>
+                                <a href="">Estate Planning</a>
+                                <a href="">Probate</a>
+                                <a href="">Professional Corporations</a>
+                                <a href="">Trust Planning</a>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4">
+                            <div class="footer-link">
+                                <h2>Useful Pages</h2>
+                                <a href="">About Us</a>
+                                <a href="">Practices</a>
+                                <a href="">Attorneys</a>
+                                <a href="">Case Studies</a>
+                                <a href="">FAQs</a>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4">
+                            <div class="footer-contact">
+                                <h2>Get In Touch</h2>
+                                <p><i class="fa fa-map-marker-alt"></i>334 Adelaide, Toronto, Ontario</p>
+                                <p><i class="fa fa-phone-alt"></i>(647) 479-7040</p>
+                                <p><i class="fa fa-envelope"></i>info@edgarchanalaw.com</p>
+                                <div class="footer-social">
+                                    <a href="#"><i class="fab fa-twitter"></i></a>
+                                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                                    <a href="#"><i class="fab fa-instagram"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; <a href="#">Edgar Chana law</a>, All Right Reserved.</p>
+        </div>
+    </div>
+
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
