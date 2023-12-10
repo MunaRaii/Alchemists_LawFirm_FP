@@ -12,13 +12,12 @@
 
     <!-- CSS Link -->
     <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/book.css">
-
+    <link rel="stylesheet" href="./css/login.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
 
 
 
-    <title>Book Appointment</title>
+    <title>User Login</title>
 </head>
 
 <body>
@@ -37,7 +36,7 @@
                         <a class="nav-link active" aria-current="page" href="index.html">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="aboutus.html">About Us</a>
+                        <a class="nav-link active" href="/aboutus.html">About Us</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link active" href="service.html">Services</a>
@@ -51,7 +50,7 @@
                 </ul>
                 <lu class="navbar-nav ms-auto mb-2 mb-lg-0">
                     <li class="nav-but">
-                        <a class="btn btn-outline-light" href="login.html">Login</a>
+                        <a class="btn btn-outline-light" href="#">Login</a>
                     </li>
                     </ul>
             </div>
@@ -59,33 +58,35 @@
     </nav>
     
    <div class="form-wrapper">
-
-    <!-- Main heading for the page -->
-<h1 style="text-align: center;">Book Your Appointment</h1>
-
-<!-- Form for booking an appointment -->
-<form action="#" method="post" id="appointmentForm">
-    <!-- Input field to select the date -->
-    <label for="date">Select Date:</label>
-    <input type="date" id="date" name="date" required>
-
-    <!-- Input field to select the time -->
-    <label for="time">Select Time:</label>
-    <input type="time" id="time" name="time" required>
-
-    <!-- Dropdown menu to select the person to meet -->
-    <label for="person">Select Person to Meet:</label>
-    <select id="person" name="person" required>
-        <option value="person1">Ambie Edgar-Chana</option>
-        <option value="person2">Aaron Edgar</option>
-    </select>
-
-    <!-- Button to submit the form and book the appointment -->
-    <button type="submit">Book Appointment</button>
-</form>
     
 
-    
+    <!-- Form for user login -->
+    <form id="loginForm">
+
+        <h1>User Login</h1>
+
+        <!-- Input field for email -->
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <!-- Input field for password -->
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+
+        <!-- Button to trigger login function -->
+        <button type="button" onclick="submitLoginForm()">Login</button>
+
+        <!-- Link to the registration page -->
+        <p class="register-link">Don't have an account? <a href="register.html">Register</a></p>
+
+        <!-- Link to the main page -->
+        <p class="register-link">Back to main page: <a href="index.html">Home</a></p>
+    </form>
+
+    <!-- Link to the external JavaScript file for additional functionality -->
+    <script src="js/signin.js"></script>
+
+   </div>
 
    
 
@@ -112,20 +113,20 @@
                         <div class="col-md-6 col-lg-4">
                             <div class="footer-link">
                                 <h2>Services </h2>
-                                <a href="service.html">Estate Planning</a>
-                                <a href="service.html">Probate</a>
-                                <a href="service.html">Professional Corporations</a>
-                                <a href="service.html">Trust Planning</a>
+                                <a href="">Estate Planning</a>
+                                <a href="">Probate</a>
+                                <a href="">Professional Corporations</a>
+                                <a href="">Trust Planning</a>
                             </div>
                         </div>
                         <div class="col-md-6 col-lg-4">
                             <div class="footer-link">
                                 <h2>Useful Pages</h2>
-                                <a href="aboutus.html">About Us</a>
-                                <a href="#">Practices</a>
-                                <a href="#">Attorneys</a>
-                                <a href="#">Case Studies</a>
-                                <a href="#">FAQs</a>
+                                <a href="">About Us</a>
+                                <a href="">Practices</a>
+                                <a href="">Attorneys</a>
+                                <a href="">Case Studies</a>
+                                <a href="">FAQs</a>
                             </div>
                         </div>
                         <div class="col-md-6 col-lg-4">
@@ -154,8 +155,5 @@
 
 
 </body>
-
-<script src="js/book.js"></script>
-
-
+<script src="JS/login.js"></script>
 </html>

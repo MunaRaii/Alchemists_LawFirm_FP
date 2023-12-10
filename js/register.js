@@ -1,4 +1,3 @@
-// script.js
 function submitForm() {
     var name = document.getElementById('name').value;
     var email = document.getElementById('email').value;
@@ -38,6 +37,9 @@ function submitForm() {
         email: email,
         password: password
     };
+
+    
+
 
     localStorage.setItem('user', JSON.stringify(user));
 

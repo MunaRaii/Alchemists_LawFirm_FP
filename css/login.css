@@ -5,8 +5,7 @@
     padding: 2rem;
     
     
-    
-} 
+}
 
 .form-wrapper form {
     width: 40%;   
@@ -23,8 +22,7 @@
     font-size: 28px;
   }
 
-
-.form-wrapper form label {
+  .form-wrapper form label {
     display: block;
     margin-bottom: 10px;
     font-weight: bold;
@@ -68,18 +66,21 @@
     
 }
 
-.form-wrapper form p a {
+
+.form-wrapper form .register-link {
+  margin-top: 20px;
+}
+
+.form-wrapper form .register-link a {
     color: rgb(249, 243, 249);
     text-decoration: none;
     
-
 }
 
-.form-wrapper form p a:hover {
+.form-wrapper form .register-link a:hover {
     text-decoration: underline;
-} 
+}
 
-/* Media query for tablet */
 @media screen and (max-width: 768px) {
     .form-wrapper form {
         width: 80%; 
