@@ -29,7 +29,7 @@ h1 {
     color: white;
     margin-top: 20px;
 }
-#appointment_button{
+#appointment_button, #service_button{
     
     border: none;
     background-color: #aa9166;
@@ -41,16 +41,18 @@ h1 {
     
 }
 
-#appointment_button:hover{
+#appointment_button:hover,  #service_button:hover{
     background-color: black;
 }
 
-#appointment_button a{
+#appointment_button a, #service_button a{
     color: #fff;
     text-decoration:none;
 
    
 }
+
+
 
 /* Slider CSS */
 
