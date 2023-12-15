@@ -207,14 +207,14 @@ h1 {
 
 .service .cards {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 50px;
-    margin-top: 90px;
+    grid-template-columns: repeat(2, 1fr);  /* Adjusted for responsiveness */
+    gap: 30px;
+    margin-top: 30px;
 }
 
 .service .card {
-    height: 400px;
-    width: 400px;
+    height: auto;
+    width: 100%;
     background-color: #aa9166;
     padding: 3% 8%;
     border: 0.2px solid rgba(144, 226, 174, 00.2);
@@ -230,23 +230,23 @@ h1 {
 
 .service .card i {
     color: rgb(78, 77, 77);
-    margin: 30px 0;
-    font-size: 2.8rem;
+    margin: 20px 0;
+    font-size: 2rem;
 
 }
 
 .service .card h2 {
     color: #fff;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 600;
     letter-spacing: 1px;
-    padding-bottom: 20px;
+    padding-bottom: 15px;
 }
 
 .service .card li {
     text-align: left;
     width: 100%;
-    margin: 12px 0;
+    margin: 10px 0;
     color: #fff;
     font-size: 14px;
 }
@@ -259,13 +259,17 @@ h1 {
 }
 
 @media screen and (max-width:768px) {
-    .cards {
-        grid-template-columns: repeat(2, 1fr);
-
+    .service h1{
+        font-size: 2rem;
+        text-align: center;
+    }
+    .service .cards {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
     }
 
 }
-
+/* 
 @media screen and (max-width:576px) {
     .cards {
         grid-template-columns: repeat(1, 1fr);
@@ -276,7 +280,7 @@ h1 {
         font-size: 2rem;
     }
 
-}
+} */
 
 
 /* Footer CSS */
@@ -350,6 +354,7 @@ h1 {
 }
 
 .footer .copyright p a {
+    text-decoration: none;
     color: #aa9166;
     font-weight: 500;
 }
