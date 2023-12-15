@@ -1,27 +1,4 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: sans-serif;
-}
 
-body {
-    background-color: black;
-}
-.navbar .navbar-nav .nav-item a{
-    padding: 15px;
-}
-
-.navbar .navbar-nav .nav-item a:hover{
-    color: #aa9166; 
-}
-
-.navbar .navbar-nav .nav-but{
-    padding: 10px;
-}
-.navbar #welcomeMessage{
-    color: #fff;
-}
 
 .team-container {
     min-height: 100vh;
@@ -41,7 +18,7 @@ body {
 }
 
 h1 {
-    color:  #fafafa;
+    color: #aa9166;
     font-size: 4rem;
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: transparent;
@@ -56,7 +33,7 @@ h1::after {
     left: 5%;
     height: 8px;
     width: 90%;
-    background-color: #fafafa;
+    background-color:#aa9166;
 }
 
 .caards {
@@ -108,6 +85,30 @@ h1::after {
     border-radius: 10%;
 }
 
+.caard_social{   
+   
+    margin-top: 37%;
+    float: left;    
+    margin-left: -35%;
+    padding: 0.3rem;
+    letter-spacing: 2rem;
+   
+
+}
+.caard_social a{
+    text-decoration: none;
+    
+}
+
+.caard_social a i{
+    font-size: 20px;
+    color: #aa9166;
+    
+}
+.caard_social a i:hover{
+    color: #fff;
+}
+
 .caard p {
     text-align: justify;
     font-size: 12px;
@@ -117,126 +118,8 @@ h1::after {
 }
 
 .caard:hover {
-    background-color: #166756;
+    background-color: #828585;
     transform: translateY(-8px);
     
 }
 
-
-/* Footer CSS */
-
-.footer {
-    position: relative;
-
-    padding-top: 10px;
-    background: #121518;
-    color: #ffffff;
-}
-
-.footer .footer-about,
-.footer .footer-link,
-.footer .footer-contact {
-    position: relative;
-    margin-bottom: 45px;
-    color: #999999;
-}
-
-.footer .footer-about h2,
-.footer .footer-link h2,
-.footer .footer-contact h2{
-    position: relative;
-    margin-bottom: 30px;
-    font-size: 25px;
-    font-weight: 600;
-    color: #aa9166;
-}
-
-.footer .footer-link a {
-    display: block;
-    margin-bottom: 10px;
-    color: #999999;
-    transition: .3s;
-}
-
-.footer .footer-link a::before {
-    position: relative;
-    content: "\f105";
-    font-family: "Font Awesome 5 Free";
-    font-weight: 900;
-    margin-right: 10px;
-}
-
-.footer .footer-link a:hover {
-    color: #aa9166;
-    letter-spacing: 1px;
-}
-
-.footer .copyright {
-    padding: 30px 15px;
-}
-
-.footer .copyright p {
-    margin: 0;
-    color: #999999;
-}
-
-.footer .copyright p{
-    text-align: center;
-}
-
-.footer .copyright p a {
-    color: #aa9166;
-    font-weight: 500;
-}
-
-.footer .copyright p a:hover {
-    color: #ffffff;
-}
-
-@media (max-width: 768px) {
-    .carousel .carousel-caption h1 {
-        font-size: 40px;
-        font-weight: 700;
-    }
-    
-    .carousel .carousel-caption p {
-        font-size: 20px;
-    }
-    
-    .carousel .carousel-caption .btn {
-        padding: 12px 30px;
-        font-size: 18px;
-        font-weight: 500;
-        letter-spacing: 0;
-    }
-}
-
-
-
-@media (max-width: 576px) {
-    .carousel .carousel-caption h1 {
-        font-size: 30px;
-        font-weight: 500;
-    }
-    
-    .carousel .carousel-caption p {
-        font-size: 16px;
-    }
-    
-    .carousel .carousel-caption .btn {
-        padding: 10px 25px;
-        font-size: 16px;
-        font-weight: 400;
-        letter-spacing: 0;
-    }
-}
-
-
-
-@media (max-width: 768px) {
-    .footer .copyright p,
-    .footer .copyright .col-md-6:last-child p {
-        margin: 5px 0;
-        text-align: center;
-    }
-}
