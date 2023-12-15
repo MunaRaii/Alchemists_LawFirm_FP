@@ -12,6 +12,7 @@ function submitLoginForm() {
         if (user.email === email && user.password === password) {
             // Redirect to the welcome page with the username as a query parameter
             window.location.href = 'index.html?name=' + encodeURIComponent(user.name);
+         
         } else {
             alert('Invalid email or password');
         }
