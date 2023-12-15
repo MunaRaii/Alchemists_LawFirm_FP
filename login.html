@@ -52,44 +52,44 @@
                     <li class="nav-but">
                         <a class="btn btn-outline-light" href="#">Login</a>
                     </li>
-                    </ul>
+                </ul>
             </div>
         </div>
     </nav>
-    
-   <div class="form-wrapper">
-    
 
-    <!-- Form for user login -->
-    <form id="loginForm">
+    <!-- Login Section -->
 
-        <h1>User Login</h1>
+    <div class="form-wrapper">
 
-        <!-- Input field for email -->
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required>
+        <!-- Form for user login -->
+        <form id="loginForm">
 
-        <!-- Input field for password -->
-        <label for="password">Password:</label>
-        <input type="password" id="password" name="password" required>
+            <h2>Welcome Back!</h2>
+            <p class="login-msg">Kindly log in to access your secure legal account.<p>
 
-        <!-- Button to trigger login function -->
-        <button type="button" onclick="submitLoginForm()">Login</button>
+            <!-- Input field for email -->
+            <label for="email">Email:</label>
+            <input type="email" id="email" placeholder="Enter Email" required>
+
+            <!-- Input field for password -->
+            <label for="password">Password:</label>
+            <input type="password" id="password" placeholder="Enter Password" required>
+
+            <!-- Button to trigger login function -->
+            <button type="button" onclick="submitLoginForm()">Login</button>
+        </form>
+
+        <div class="register">
+            <!-- Link to the registration page -->
+            <p class="register-link">Don't have an account? <a href="register.html">Register</a></p>
+
+            <!-- Link to the main page -->
+            <p class="back-to-home">Back to main page: <a href="index.html">Home</a></p>
+        </div>
+
+    </div>
 
 
-        <!-- Link to the registration page -->
-        <p class="register-link">Don't have an account? <a href="register.html">Register</a></p>
-
-        <!-- Link to the main page -->
-        <p class="register-link">Back to main page: <a href="index.html">Home</a></p>
-    </form>
-
-   
-
-
-   </div>
-
-   
 
     <!-- Footer Section -->
     <div class="footer">
@@ -156,6 +156,7 @@
 
 
 </body>
- <!-- Link to the external JavaScript file for additional functionality -->
+<!-- Link to the external JavaScript file for additional functionality -->
 <script src="js/login.js"></script>
+
 </html>
