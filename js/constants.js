@@ -1,4 +1,7 @@
-const defaultData = {
+/** 
+ * Global store available in all over the site
+ */
+window.store = {
     services: {
         "uszsmadofre": {
             id: "uszsmadofre",
@@ -39,7 +42,15 @@ const defaultData = {
             wishlistServices: ["gb2p0l5fx"]
         }
     },
-    activeUser: {
+    activeUserId: "7z0r5o1t9dr"
+};
 
-    }
+window.BASE_URL= 'https://munaraii.github.io/Alchemists_LawFirm_FP/';
+
+window.SITE_PAGES = {
+    LOGIN: BASE_URL+'login',
+    SIGNUP: BASE_URL+'signup',
+    FAV: BASE_URL+'favrite',
+    HOME: BASE_URL,
+    SERVICES: BASE_URL+'services'
 };
