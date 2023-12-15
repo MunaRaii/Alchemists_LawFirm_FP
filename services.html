@@ -11,19 +11,19 @@
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
     <!-- CSS Link -->
-    <link rel="stylesheet" href="css/headerfooter.css">
-    <link rel="stylesheet" href="css/services.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/service.css">
 
+    <!-- fontawsome link -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
 
-    <title>Our service</title>
 
-    <script src="js/services.js"></script>
+
+    <title>Services</title>
 </head>
 
 <body>
     <!-- Header Section -->
-
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">Edgar Chana Law</a>
@@ -38,97 +38,28 @@
                         <a class="nav-link active" aria-current="page" href="#">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="#">Our Team</a>
+                        <a class="nav-link active" href="aboutus.html">About Us</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="#">Services</a>
+                        <a class="nav-link active" href="service.html">Services</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="#">News</a>
+                        <a class="nav-link active" href="team.html">Our Team</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="#">Contact Us</a>
+                        <a class="nav-link active" href="contact.html">Contact Us</a>
                     </li>
                 </ul>
-                <div id="loginButtons" class="navbar-nav ms-auto mb-2 mb-lg-0">
-                    <li class="nav-but" id="loginButton">
-                        <a class="btn btn-outline-light" href="signin.html">Login</a>
+                <lu class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-but">
+                        <a class="btn btn-outline-light" href="login.html">Login</a>
                     </li>
-                    <li class="nav-but" id="logoutButton" style="display: none;">
-                        <a class="btn btn-outline-light" href="#" onclick="logout()">Logout</a>
-                    </li>
-                </div>
-
-                <p id="welcomeMessage">Welcome, <span id="welcomeName" style="display: none;"></span>!</p>
-
-
-                <script>
-                    // Function to set user information in local storage
-                    function setUserInStorage(user) {
-                        localStorage.setItem('user', JSON.stringify(user));
-                    }
-                
-                    // Function to get user information from local storage
-                    function getUserFromStorage() {
-                        const storedUser = localStorage.getItem('user');
-                        return storedUser ? JSON.parse(storedUser) : null;
-                    }
-                
-                    // Function to handle login
-                    function login() {
-                        var email = document.getElementById('email').value;
-                        var password = document.getElementById('password').value;
-                
-                        // Retrieve user information from local storage
-                        var user = getUserFromStorage();
-                
-                        if (user) {
-                            // Check if email and password match the stored user
-                            if (user.email === email && user.password === password) {
-                                // Redirect to the welcome page with the username as a query parameter
-                                window.location.href = 'headerfooter.html?name=' + encodeURIComponent(user.name);
-                            } else {
-                                alert('Invalid email or password');
-                            }
-                        } else {
-                            alert('User not found. Please register first.');
-                        }
-                    }
-                
-                    // Function to handle logout
-                    function logout() {
-                        // Clear user information in local storage
-                        localStorage.removeItem('user');
-                        // Redirect to the login page after logout
-                        window.location.href = 'headerfooter.html';
-                    }
-                
-                    // Parse the query parameter to get the username
-                    const params = new URLSearchParams(window.location.search);
-                    const name = params.get('name');
-                
-                    // Display the username on the page and toggle login/logout buttons
-                    const welcomeNameElement = document.getElementById('welcomeName');
-                    const welcomeMessageElement = document.getElementById('welcomeMessage');
-                    if (name) {
-                        welcomeNameElement.innerText = name;
-                        welcomeNameElement.style.display = 'inline-block';
-                        welcomeMessageElement.style.display = 'block';
-                        document.getElementById('loginButton').style.display = 'none';
-                        document.getElementById('logoutButton').style.display = 'inline-block';
-                    } else {
-                        welcomeNameElement.style.display = 'none';
-                        welcomeMessageElement.style.display = 'none';
-                        document.getElementById('loginButton').style.display = 'inline-block';
-                        document.getElementById('logoutButton').style.display = 'none';
-                    }
-                </script>
-                
+                    </ul>
             </div>
         </div>
     </nav>
 
-    <div class="containers">
+    <div class="service-containers">
         <div class="service-wrapper">
             <div class="service">
                 <h1>Our service </h1>
@@ -163,11 +94,13 @@
                         <i class="fa-solid fa-user-tie"></i>
                         <h2>Professional Corporation Support</h2>
                         <ul>
-                            <li>Assisting professionals such as doctors, lawyers, and dentists with professional incorporations.</li>
-                            <li>Advisory services on maintaining corporate records and professional incorporation status.</li>
+                            <li>Assisting professionals such as doctors, lawyers, and dentists with professional
+                                incorporations.</li>
+                            <li>Advisory services on maintaining corporate records and professional incorporation
+                                status.</li>
                             <li>Corporate will planning to minimize probate.
                             </li>
-                            
+
                         </ul>
                     </div>
 
@@ -187,9 +120,9 @@
                         <h2>Tax-Efficient Will and Power of Attorney Preparation</h2>
                         <ul>
                             <li>
-                                In-depth focus on preparing Wills and Powers of Attorney with a specific emphasis on tax efficiency.
+                                In-depth focus on preparing Wills and Powers of Attorney with a specific emphasis on tax
+                                efficiency.
                             </li>
-                            
                         </ul>
                     </div>
 
@@ -197,19 +130,17 @@
                         <i class="fa-solid fa-house-laptop"></i>
                         <h2>Business Succession and Reorganization</h2>
                         <ul>
-                            <li>Specialized planning for business succession, including estate freezes and reorganizations to ensure a smooth transition.</li>
-                            
+                            <li>Specialized planning for business succession, including estate freezes and
+                                reorganizations to ensure a smooth transition.</li>
+
                         </ul>
                     </div>
-
                 </div>
-
-
-
             </div>
         </div>
-
     </div>
+
+
 
     <!-- Footer Section -->
     <div class="footer">
@@ -234,20 +165,20 @@
                         <div class="col-md-6 col-lg-4">
                             <div class="footer-link">
                                 <h2>Services </h2>
-                                <a href="">Estate Planning</a>
-                                <a href="">Probate</a>
-                                <a href="">Professional Corporations</a>
-                                <a href="">Trust Planning</a>
+                                <a href="service.html">Estate Planning</a>
+                                <a href="service.html">Probate</a>
+                                <a href="service.html">Professional Corporations</a>
+                                <a href="service.html">Trust Planning</a>
                             </div>
                         </div>
                         <div class="col-md-6 col-lg-4">
                             <div class="footer-link">
                                 <h2>Useful Pages</h2>
-                                <a href="">About Us</a>
-                                <a href="">Practices</a>
-                                <a href="">Attorneys</a>
-                                <a href="">Case Studies</a>
-                                <a href="">FAQs</a>
+                                <a href="aboutus.html">About Us</a>
+                                <a href="#">Practices</a>
+                                <a href="#">Attorneys</a>
+                                <a href="#">Case Studies</a>
+                                <a href="#">FAQs</a>
                             </div>
                         </div>
                         <div class="col-md-6 col-lg-4">
@@ -257,10 +188,10 @@
                                 <p><i class="fa fa-phone-alt"></i>(647) 479-7040</p>
                                 <p><i class="fa fa-envelope"></i>info@edgarchanalaw.com</p>
                                 <div class="footer-social">
-                                    <a href="#"><i class="fab fa-twitter"></i></a>
-                                    <a href="#"><i class="fab fa-facebook-f"></i></a>
-                                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                                    <a href="#"><i class="fab fa-instagram"></i></a>
+                                    <a href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
+                                    <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+                                    <a href="https://www.linkedin.com/"><i class="fab fa-linkedin-in"></i></a>
+                                    <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -272,11 +203,6 @@
             <p>&copy; <a href="#">Edgar Chana law</a>, All Right Reserved.</p>
         </div>
     </div>
-
-    <!-- Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-        crossorigin="anonymous"></script>
 
 </body>
 
