@@ -10,12 +10,12 @@
     margin: 0 auto;
 }
 
-.form-wrapper form h2{
+.form-wrapper form h2 {
     color: #aa9166;
     text-align: center;
 }
 
-.form-wrapper form .login-msg{
+.form-wrapper form .login-msg {
     margin-bottom: 30px;
     text-align: center;
 }
@@ -51,7 +51,7 @@
     color: #e9e8e8;
 }
 
-.form-wrapper .register{
+.form-wrapper .register {
     text-align: center;
 }
 
@@ -61,7 +61,7 @@
     text-decoration: none;
 }
 
-.form-wrapper .register a:hover{
+.form-wrapper .register a:hover {
     text-decoration: underline;
 }
 
@@ -86,4 +86,4 @@
     .form-wrapper form h1 {
         font-size: 18px;
     }
-} 
+}
