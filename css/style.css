@@ -200,7 +200,7 @@ h1 {
 }
 
 .service .card {
-    height: 300px;
+    height: 400px;
     width: 400px;
     background-color: #aa9166;
     padding: 3% 8%;
@@ -294,6 +294,11 @@ h1 {
     color: #aa9166;
 }
 
+.footer .footer-contact p a{
+    color: #999999;
+    text-decoration: none;
+}
+
 .footer .footer-link a {
     display: block;
     margin-bottom: 10px;
@@ -312,6 +317,11 @@ h1 {
 .footer .footer-link a:hover {
     color: #aa9166;
     letter-spacing: 1px;
+}
+
+.footer .footer-contact .footer-social a{
+    color: #aa9166 ;
+    letter-spacing: 1rem;
 }
 
 .footer .copyright {
