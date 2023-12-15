@@ -160,6 +160,19 @@ h1 {
 .about .about-text p {
     font-size: 16px;
 }
+.about .about-text a.btn {
+    position: relative;
+    margin-top: 15px;
+    padding: 15px 35px;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #fff;
+    border-radius: 0;
+    background: #aa9166;
+    transition: .3s;
+}
 
 @media (max-width: 768px) {
     .about .about-img {
