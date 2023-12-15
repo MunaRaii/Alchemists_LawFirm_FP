@@ -3,7 +3,7 @@
   background-color: black;
   margin-bottom: -15px;
 }
-.contact-wrapper .container{
+.contact-wrapper .form-container{
   position: center;
   width: 100%;
   min-height: 100vh;
@@ -175,15 +175,17 @@ color:#aa9166; ;
 .contact-wrapper .social-icons a:hover{
   transform: scale(1.05);
 }
-.contact-wrapper .map{
-  padding: 2rem;
-  width: 70%;   
-  border-radius: 15px;    
-  margin-left: 15%;
-  margin-bottom: 1%;
-  
-}
 
+.contact-wrapper .map{
+  padding-bottom: 5rem;
+  width: 70%;
+  border-radius: 15px;
+  height: 300px;
+  margin: 0 auto; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 @media (max-width: 780px) {
   .contact-wrapper .form {
@@ -227,7 +229,7 @@ color:#aa9166; ;
     font-size: 1.15rem;
   }
 
-  .contact-wrapper  .social-icons a {
+  .contact-wrapper .social-icons a {
     width: 30px;
     height: 30px;
     line-height: 30px;
@@ -237,7 +239,7 @@ color:#aa9166; ;
     width: 23px;
   }
 
-  .contact-wrapper   .input {
+  .contact-wrapper .input {
     padding: 0.45rem 1.2rem;
   }
 
