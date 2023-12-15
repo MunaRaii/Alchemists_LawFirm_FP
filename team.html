@@ -1,21 +1,30 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Our Team</title>
-    <link rel="stylesheet" href="css/team.css" />
-    <link rel="stylesheet" href="./css/team.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
+    <!-- CSS Link -->
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/team.css">
+
+     <!-- fontawsome link -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+
    
+
+
+
+    <title>Our Team</title>
 </head>
 
 <body>
-
     <!-- Header Section -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
@@ -28,53 +37,48 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="aboutus.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="service.html">Services</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link active" href="team.html">Our Team</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="services.html">Services</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" href="#">News</a>
-                    </li>
-                    <li class="nav-item">
                         <a class="nav-link active" href="contact.html">Contact Us</a>
                     </li>
-                    
                 </ul>
-                <div id="loginButtons" class="navbar-nav ms-auto mb-2 mb-lg-0">
-                    <li class="nav-but" id="loginButton">
-                        <a class="btn btn-outline-light" href="signin.html">Login</a>
+                <lu class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-but">
+                        <a class="btn btn-outline-light" href="login.html">Login</a>
                     </li>
-                    <li class="nav-but" id="logoutButton" style="display: none;">
-                        <a class="btn btn-outline-light" href="#" onclick="logout()">Logout</a>
-                    </li>
-                    <li class="nav-item">
-                        <a id="bookAppointmentLink" class="nav-link active" href="book.html" style="display: none;">Book Appointment</a>
-                    </li>
-                </div>
-
-                <p id="welcomeMessage" style="display: none;" >Welcome, <span id="welcomeName" style="display: none;"></span>!</p>
-
-
-                <script src="js/index.js">                  
-                </script>
-                
+                    </ul>
             </div>
         </div>
     </nav>
-
     <div class="team-container">
         <div class="team-wrapper">
             <div class="team">
                 <h1> Our Team </h1>
                 <div class="caards">
                     <div class="caard">
-                        <img src="images/ambie.jpg" alt="ambie image">
+                        <img src="img/ambie.jpg" alt="ambie image">
+                        <div class="caard_social">
+                            <a href="https://www.facebook.com/ambie.chana">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/in/ambie-edgar-chana-920b8ab/">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                        </div>
+                        
+
                         <h2>Ambie Edgar-Chana</h2>
-                        <h3>Direct: 416 907 9703</h3>
+                        <h3>Direct: 416 907 9703 </h3>
                         <p>Ambie advises clients on tax-efficient will and estate planning, business succession
                             planning, family and alter-ego trusts, and estate administration.
                             Ambie also works with the largest trust companies and banks in Canada, as well as financial
@@ -93,29 +97,41 @@
                     </div>
 
                     <div class="caard">
-                        <img src="images/aaron.jpg" alt="arron.jpg">
+                        <img src="img/aaron.jpg" alt="arron.jpg">
+                        <div class="caard_social">
+                            <a href="https://www.linkedin.com/in/aaronedgar/">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/in/aaronedgar/">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                        </div>
                         <h2>Aaron Edgar</h2>
                         <h3>Direct: 647 478 9705</h3>
+                        
 
-                        <p>Aaron advises clients on estate planning and estate administration matters as part of his
-                            estates and trust practice.
-                            In his estate planning role, Aaron meets with clients to ascertain their estate planning
-                            goals and drafts tax-efficient
-                            planning documents, including Wills, Powers of Attorney, and inter vivos trusts. Aaron also
-                            assists clients with obtaining probate
-                            (Certificate of Appointment) and provides general estate administration advice.
-                            Prior to entering into the practice of law, Aaron worked as an electrical engineer designing
-                            integrated circuits for a start-up telecommunications company.</p>
+                        <p>
+                            Aaron is a seasoned professional in the field of estates and trusts, offering comprehensive guidance on estate
+                             planning and estate administration matters. In his role focused on estate planning, Aaron engages with clients to thoroughly understand 
+                             their estate planning objectives. 
+                             Leveraging his expertise, he meticulously crafts tax-efficient planning documents, such as Wills, Powers of Attorney, and inter vivos trusts, tailored
+                             to meet the unique needs and goals of each client.                           
+                            Beyond the initial planning phase, Aaron extends his support
+                             estate administration advice, ensuring clients have a comprehensive understanding of estate matters.
+                            
+                            Prior to entering the legal profession, Aaron's background as an electrical engineer adds a unique dimension to his skill set. With experience in designing integrated circuits for a start-up telecommunications company, Aaron brings a multidisciplinary perspective to his legal practice, blending technical acumen with legal expertise. This diverse background enhances his ability to offer innovative solutions and a well-rounded approach to estate planning and administration.</p>
                     </div>
 
                     <div class="caard">
-                        <img src="images/RioCocoRecep.jpg" alt="RioCocoRecep">
+                        <img src="img/RioCocoRecep.jpg" alt="RioCocoRecep">
                         <h2>Estate Planning</h2>
-                        <p>Rio is the firm’s greeter and is always excited to meet clients. On your visit to the firm’s
-                            Toronto office you will likely see Rio through the glass doors. Rio likes to sit patiently
-                            outside the board room waiting for Ambie to finish her meetings. Coco passed away in 2021
-                            and is deeply missed by the firm and the clients she touched.
-                            Rio and Coco were featured in Precedent Magazine in an article about lawyers and their dogs.
+                        <p>Rio serves as the enthusiastic greeter for the firm, exuding excitement whenever clients arrive.
+                             During your visit to the Toronto office, you'll likely be welcomed by Rio's lively presence just beyond
+                              the glass doors. Rio has a penchant for patiently waiting outside the boardroom, a dedicated companion to 
+                              Ambie as she wraps up her meetings. While Rio brings joy to the office, there's a somber note in the firm's
+                               history as Coco, a beloved presence, passed away in 2021. Coco's absence is deeply felt, leaving an indelible mark on both the
+                                firm and the clients who were touched by her warmth. The special bond between Rio and Coco was even highlighted in Precedent Magazine, featuring them in an article that showcased the unique relationships between lawyers and their dogs. 
+                            The article served as a tribute to Coco's memory and celebrated the enduring companionship that dogs bring to the legal profession.
                         </p>
                     </div>
                 </div>
@@ -124,6 +140,10 @@
         </div>
 
     </div>
+
+    
+
+   
 
     <!-- Footer Section -->
     <div class="footer">
@@ -148,20 +168,20 @@
                         <div class="col-md-6 col-lg-4">
                             <div class="footer-link">
                                 <h2>Services </h2>
-                                <a href="">Estate Planning</a>
-                                <a href="">Probate</a>
-                                <a href="">Professional Corporations</a>
-                                <a href="">Trust Planning</a>
+                                <a href="service.html">Estate Planning</a>
+                                <a href="service.html">Probate</a>
+                                <a href="service.html">Professional Corporations</a>
+                                <a href="service.html">Trust Planning</a>
                             </div>
                         </div>
                         <div class="col-md-6 col-lg-4">
                             <div class="footer-link">
                                 <h2>Useful Pages</h2>
-                                <a href="">About Us</a>
-                                <a href="">Practices</a>
-                                <a href="">Attorneys</a>
-                                <a href="">Case Studies</a>
-                                <a href="">FAQs</a>
+                                <a href="aboutus.html">About Us</a>
+                                <a href="#">Practices</a>
+                                <a href="#">Attorneys</a>
+                                <a href="#">Case Studies</a>
+                                <a href="#">FAQs</a>
                             </div>
                         </div>
                         <div class="col-md-6 col-lg-4">
@@ -171,10 +191,10 @@
                                 <p><i class="fa fa-phone-alt"></i>(647) 479-7040</p>
                                 <p><i class="fa fa-envelope"></i>info@edgarchanalaw.com</p>
                                 <div class="footer-social">
-                                    <a href="#"><i class="fab fa-twitter"></i></a>
-                                    <a href="#"><i class="fab fa-facebook-f"></i></a>
-                                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                                    <a href="#"><i class="fab fa-instagram"></i></a>
+                                    <a href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
+                                    <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+                                    <a href="https://www.linkedin.com/"><i class="fab fa-linkedin-in"></i></a>
+                                    <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -187,10 +207,10 @@
         </div>
     </div>
 
-    <!-- Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-        crossorigin="anonymous"></script>
+    <script src="./js/contact.js"></script>
+
+
 
 </body>
+
 </html>
