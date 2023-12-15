@@ -46,7 +46,7 @@
                         <a class="nav-link active" href="contact.html">Contact Us</a>
                     </li>
                 </ul>
-                <lu class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                     <li class="nav-but">
                         <a class="btn btn-outline-light" href="login.html">Login</a>
                     </li>
@@ -55,36 +55,58 @@
         </div>
     </nav>
     
-   <div class="form-wrapper">
-    
-    <!-- User registration form -->
-    <form id="registrationForm">
-        <h1>User Registration</h1>
+    <div class="form-wrapper">
+        <form id="registrationForm">
+            <h1>User Registration</h1>
 
-        <!-- Input field for name -->
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required>
+             <!-- Progress Bar -->
+             <div class="progress-wrapper">
+                <div class="progress-bar" id="progressBar"></div>
+            </div>
 
-        <!-- Input field for email -->
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required>
+            <!-- Input field for name -->
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
 
-        <!-- Input field for password -->
-        <label for="password">Password:</label>
-        <input type="password" id="password" name="password" required>
+            <!-- Input field for email -->
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
 
-        <!-- Input field to confirm password -->
-        <label for="confirmPassword">Confirm Password:</label>
-        <input type="password" id="confirmPassword" name="confirmPassword" required >
-        <br>
+            <!-- Input field for password -->
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            <div id="password-strength-bar"></div>
 
-        <!-- Button to trigger registration -->
-        <button type="button" onclick="submitForm()">Register</button>
+            <!-- Input field to confirm password -->
+            <label for="confirmPassword">Confirm Password:</label>
+            <input type="password" id="confirmPassword" name="confirmPassword" required>
 
-        <!-- Links for navigation -->
-        <p class="login-link">Already have an account? <a href="login.html">Log in</a></p>
-        <p class="register-link">Back to main page:  <a href="index.html">Home</a></p>
-   </div>
+            <!-- Additional Fields -->
+            <label for="personalUrl">Personal URL:</label>
+            <input type="text" id="personalUrl" name="personalUrl">
+
+            <label for="yearOfBirth">Year of Birth:</label>
+            <input type="number" id="yearOfBirth" name="yearOfBirth" min="1900" max="2099">
+
+            
+            <label>Gender:</label>
+            <input type="radio" id="gender" class="gender" name="gender" value="Male">
+            <label for="male">Male</label>
+            <input type="radio" id="gender" class="gender" name="gender" value="Female">            
+            <label for="female">Female</label>             
+            
+                       
+
+           
+
+            <!-- Button to trigger registration -->
+            <button type="button" onclick="submitForm()">Register</button>
+
+            <!-- Links for navigation -->
+            <p class="login-link">Already have an account? <a href="login.html">Log in</a></p>
+            <p class="register-link">Back to main page:  <a href="index.html">Home</a></p>
+        </form>
+    </div>
 
    
 
@@ -111,10 +133,10 @@
                         <div class="col-md-6 col-lg-4">
                             <div class="footer-link">
                                 <h2>Services </h2>
-                                <a href="service.html">Estate Planning</a>
-                                <a href="service.html">Probate</a>
-                                <a href="service.html">Professional Corporations</a>
-                                <a href="service.html">Trust Planning</a>
+                                <a href="#">Estate Planning</a>
+                                <a href="#">Probate</a>
+                                <a href="#">Professional Corporations</a>
+                                <a href="#">Trust Planning</a>
                             </div>
                         </div>
                         <div class="col-md-6 col-lg-4">
