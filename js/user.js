@@ -1,4 +1,8 @@
 
+function isUserExist(userId){
+    return store.users.hasOwnProperty(userId);
+}
+
 /** 
  * Check any user is login or not
  */
@@ -39,4 +43,19 @@ function authenticateUser( userCredentials ){
 
 }
 
+
+function getUserServicesId( userId ){
+    if(isStoreExist() && isUserExist( userId)){
+        return store.users[userId].services;
+    }
+    return [];
+}
+
+
+function getUserFavServicesId( userId ){
+    if(isStoreExist() && isUserExist( userId)){
+        return store.users[userId].favServices;
+    }
+    return [];
+}
 
