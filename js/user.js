@@ -10,8 +10,8 @@
  * }
  */
 function createNewUser( userDetail ){
-    const {name ='', email='', password=''} = userDetail;  //This
-    if( name && email && password ){ //This
+    const {name ='', email='', password=''} = userDetail;  
+    if( name && email && password ){ 
         const id = generateID();
         const user = {
             ...userDetail,
@@ -23,7 +23,7 @@ function createNewUser( userDetail ){
         store.users[id] = user;
         updateStoreInLocalStorage();
         redirectToLoginPage();
-    }//This Lines can we remove aftter merge the login and signup page
+    }
     return false;
 }
 

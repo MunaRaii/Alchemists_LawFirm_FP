@@ -27,10 +27,6 @@ function submitForm() {
     var password = document.getElementById('password').value;
     var confirmPassword = document.getElementById('confirmPassword').value;
 
-
-
-
-
     // Simple validation
     if (!name || !email || !password || !confirmPassword) {
         alert('All fields are required');
