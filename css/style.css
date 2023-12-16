@@ -22,6 +22,36 @@ h1 {
     color: #aa9166;
 }
 
+.navbar .navbar-nav .nav-but {
+    padding: 10px;
+}
+.navbar #welcomeMessage {
+    color: white;
+    margin-top: 20px;
+}
+#appointment_button{
+    
+    border: none;
+    background-color: #aa9166;
+    color: #fff;
+    width: 20%;
+    height: 40px;
+    margin: 2rem 40%;
+    border-radius: 10px;
+    
+}
+
+#appointment_button:hover{
+    background-color: black;
+}
+
+#appointment_button a{
+    color: #fff;
+    text-decoration:none;
+
+   
+}
+
 /* Slider CSS */
 
 .carousel {
@@ -91,6 +121,7 @@ h1 {
     background: #aa9166;
     border-radius: 0;
     transition: .3s;
+    margin: 0.3rem;
 }
 
 .carousel .carousel-caption .btn:hover {
@@ -174,6 +205,11 @@ h1 {
     transition: .3s;
 }
 
+.about .about-text a.btn:hover {
+    color: #121518;
+    background: #aa9166;
+}
+
 @media (max-width: 768px) {
     .about .about-img {
         margin-bottom: 30px;
@@ -229,6 +265,14 @@ h1 {
 }
 
 .service .card {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-top: 90px;
+}
+
+.service .card {
+    height: 300px;
+    width: 320px;
     background-color: #aa9166;
     padding: 3% 8%;
     border: 0.2px solid rgba(144, 226, 174, 00.2);
@@ -244,45 +288,43 @@ h1 {
 
 .service .card i {
     color: rgb(78, 77, 77);
-    margin: 20px 0;
-    font-size: 2rem;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    font-size: 2.8rem;
 
 }
 
 .service .card h2 {
     color: #fff;
-    font-size: 18px;
+    font-size: 20px;
     font-weight: 600;
     letter-spacing: 1px;
-    padding-bottom: 15px;
+
 }
 
 .service .card li {
     text-align: left;
     width: 100%;
-    margin: 10px 0;
+    margin: 12px 0;
     color: #fff;
-    font-size: 14px;
+    font-size: 12px;
 }
 
 .service .card:hover {
+    color: black;
     background-color: #aa9166;
     transform: translateY(-8px);
     border-color: #fff;
-} 
+}
 
 @media screen and (max-width:768px) {
-    .service h1{
-        font-size: 2rem;
-        text-align: center;
-    }
-    .service .cards {
-        grid-template-columns: repeat(1, 1fr);
-        gap: 20px;
+    .cards {
+        grid-template-columns: repeat(2, 1fr);
+
     }
 
 }
-/* 
+
 @media screen and (max-width:576px) {
     .cards {
         grid-template-columns: repeat(1, 1fr);
@@ -300,7 +342,7 @@ h1 {
 
 .footer {
     position: relative;
-    padding-top: 180px;
+    padding: 2rem;
     background: #121518;
     color: #ffffff;
 }
@@ -347,7 +389,6 @@ h1 {
     color: #aa9166;
     letter-spacing: 1px;
 }
-
 .footer .footer-contact .footer-social a{
     color: #aa9166 ;
     letter-spacing: 1rem;
