@@ -62,7 +62,7 @@
     display: none;
 }
 
-button{
+.about .content .text button{
     padding: 15px 35px;
     font-size: 18px;
     font-weight: 500;
@@ -73,7 +73,7 @@ button{
     border-radius: 0;
 }
 
-button:hover{
+.about .content .text button:hover{
     background: #aa9166;
     color:#121518;
     transition: .4s;
@@ -86,14 +86,34 @@ button:hover{
         height: auto;
         padding: 70px 0px;
     }
+    .about .content .text h1{
+        font-size: 34px;
+    }
+    .about .content .text h5{
+        font-size: 22px;
+    }
+    .about .content .text p{
+        font-size: 20px;
+    }
+    .about .content img{
+        margin-bottom: 35px;
+    }
 }
 
 @media screen and (max-width: 576px){
+    .about .content .text h1{
+        font-size: 30px;
+    }
+    .about .content .text h5{
+        font-size: 20px;
+    }
+    .about .content .text p{
+        font-size: 18px;
+    }
     .about .content img{
         margin-bottom: 35px;
     }
     .text h1{
         font-size: 60px;
-        margin-bottom: 25px;
     }
 }
