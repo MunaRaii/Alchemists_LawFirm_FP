@@ -144,7 +144,6 @@ h1 {
 .about {
     position: relative;
     width: 100%;
-    padding: 60px 0;
 }
 
 .about .section-header {
@@ -202,7 +201,7 @@ h1 {
 
 .footer {
     position: relative;
-    padding-top: 180px;
+    padding-top: 30px;
     background: #121518;
     color: #ffffff;
 }
