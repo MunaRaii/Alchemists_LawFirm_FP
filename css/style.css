@@ -160,6 +160,19 @@ h1 {
 .about .about-text p {
     font-size: 16px;
 }
+.about .about-text a.btn {
+    position: relative;
+    margin-top: 15px;
+    padding: 15px 35px;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #fff;
+    border-radius: 0;
+    background: #aa9166;
+    transition: .3s;
+}
 
 @media (max-width: 768px) {
     .about .about-img {
@@ -210,9 +223,9 @@ h1 {
 
 .service .cards {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 50px;
-    margin-top: 90px;
+    grid-template-columns: repeat(2, 1fr);  /* Adjusted for responsiveness */
+    gap: 30px;
+    margin-top: 30px;
 }
 
 .service .card {
@@ -231,24 +244,23 @@ h1 {
 
 .service .card i {
     color: rgb(78, 77, 77);
-    margin-top: 15px;
-    margin-bottom: 20px;
-    font-size: 2.8rem;
+    margin: 20px 0;
+    font-size: 2rem;
 
 }
 
 .service .card h2 {
     color: #fff;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 600;
     letter-spacing: 1px;
-    padding-bottom: 20px;
+    padding-bottom: 15px;
 }
 
 .service .card li {
     text-align: left;
     width: 100%;
-    margin: 12px 0;
+    margin: 10px 0;
     color: #fff;
     font-size: 14px;
 }
@@ -261,13 +273,17 @@ h1 {
 } */
 
 @media screen and (max-width:768px) {
-    .cards {
-        grid-template-columns: repeat(2, 1fr);
-
+    .service h1{
+        font-size: 2rem;
+        text-align: center;
+    }
+    .service .cards {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
     }
 
 }
-
+/* 
 @media screen and (max-width:576px) {
     .cards {
         grid-template-columns: repeat(1, 1fr);
@@ -278,7 +294,7 @@ h1 {
         font-size: 2rem;
     }
 
-}
+} */
 
 
 /* Footer CSS */
@@ -308,6 +324,11 @@ h1 {
     color: #aa9166;
 }
 
+.footer .footer-contact p a{
+    color: #999999;
+    text-decoration: none;
+}
+
 .footer .footer-link a {
     display: block;
     margin-bottom: 10px;
@@ -328,6 +349,11 @@ h1 {
     letter-spacing: 1px;
 }
 
+.footer .footer-contact .footer-social a{
+    color: #aa9166 ;
+    letter-spacing: 1rem;
+}
+
 .footer .copyright {
     padding: 30px 15px;
 }
@@ -342,6 +368,7 @@ h1 {
 }
 
 .footer .copyright p a {
+    text-decoration: none;
     color: #aa9166;
     font-weight: 500;
 }
