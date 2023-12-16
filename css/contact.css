@@ -26,6 +26,10 @@
   grid-template-columns: repeat(2, 1fr);
 }
 
+.contact-wrapper .form .contact-info .text{
+  text-align: justify;
+}
+
 .contact-wrapper .contact-form{
   background-color: rgb(39, 40, 40);
   position: relative;
