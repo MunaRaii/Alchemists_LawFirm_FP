@@ -44,20 +44,20 @@ let store = {
     activeUserId: "7z0r5o1t9dr"
 };
 
-let BASE_URL= 'https://munaraii.github.io/Alchemists_LawFirm_FP/';
+// let BASE_URL= location.host+'/';
+let BASE_URL= 'https://automatic-spoon-7v947qjq6wjv2p6pj-5500.app.github.dev/';
 
 let SITE_PAGES = {
-    LOGIN: BASE_URL+'login',
-    SIGNUP: BASE_URL+'signup',
-    FAV: BASE_URL+'favrite',
-    HOME: BASE_URL,
-    SERVICES: BASE_URL+'services'
+    LOGIN: BASE_URL+'login.html',
+    SIGNUP: BASE_URL+'signup.html',
+    FAV: BASE_URL+'favrite.html',
+    HOME: BASE_URL+'index.html',
+    SERVICES: BASE_URL+'services.html',
 };
 
 let BUTTON_TEXT = {
     ADD_SERVICE: 'Add Service',
     ADDED_SERVICE: 'Added Service',
-
     ADD_TO_FAV : 'Add to Fav',
     ADDED_TO_FAV: 'Added to Fav'
 }

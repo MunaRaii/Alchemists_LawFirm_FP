@@ -2,7 +2,7 @@
 
 
 function getAddServiceBtn(serviceId = null) {
-    const userId = getLoginUserId();
+    const userId = getLoginedUserId();
     if(isSubscribedService(userId, serviceId)){
         return `<a href="#" class="btn btn-primary ${className.addToService} disabled">${BUTTON_TEXT.ADDED_SERVICE}</a>`;
     }
@@ -11,7 +11,7 @@ function getAddServiceBtn(serviceId = null) {
 
 
 function getAddFavServiceBtn(serviceId = null) {
-    const userId = getLoginUserId();
+    const userId = getLoginedUserId();
     if (isFavService(userId, serviceId)) {
         return `<a href="#" class="btn btn-secondary ${className.addToFavService} disabled" >${BUTTON_TEXT.ADDED_TO_FAV}</a>`;
     }

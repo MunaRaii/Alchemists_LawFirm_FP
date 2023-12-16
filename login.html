@@ -12,6 +12,7 @@
 
     <!-- CSS Link -->
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/aboutus.css">
 
     <!-- fontawsome link -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
@@ -36,13 +37,13 @@
                         <a class="nav-link" aria-current="page" href="index.html">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link " href="/aboutus.html">About us</a>
+                        <a class="nav-link active" href="aboutus.html">About us</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link " href="services.html">Services</a>
+                        <a class="nav-link" href="services.html">Services</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="my-services.html">My Services</a>
+                        <a class="nav-link" href="my-services.html">My Services</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="fav-services.html">Fav Services</a>
@@ -60,21 +61,7 @@
         </div>
     </nav>
 
-
-    <!-- Service Section -->
-    <div class="service-container" id="services">
-        <div class="service-wrapper">
-            <div class="container py-5">
-
-                <div class="service py-5">
-                    <h1 class="text-white text-center mb-5">My services </h1>
-
-                    <div id="my-services"></div>
-                </div>
-
-            </div>
-        </div>
-    </div>
+    <h1 class="p-5 m-5">Login</h1>
 
     <!-- Footer Section -->
     <div class="footer">
@@ -135,30 +122,8 @@
     <script src="js/constants.js"></script>
     <script src="js/utils.js"></script>
     <script src="js/user.js"></script>
-    <script src="js/services.js"></script>
-    <script src="js/template-generator.js"></script>
     <script src="js/redirection.js"></script>
-    <script src="js/event.js"></script>
 
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            const myServicesSection = document.getElementById('my-services');
-            const userId = getLoginedUserId();
-
-            if(!userId){
-                redirectToLoginPage();
-                retrun;
-            }
-
-            if (myServicesSection && userId) {
-                const getServices = getServicesByUserId(userId);
-                const serviceTemplate = getServicesTemplate(getServices);
-                myServicesSection.innerHTML = serviceTemplate;
-
-                attachServiceEvents();
-            }
-        });
-    </script>
 
 </body>
 
