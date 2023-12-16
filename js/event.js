@@ -1,7 +1,15 @@
 function attachServiceEvents() {
-
     /* Perform the add service function */
-    const addToServiceBtns = document.querySelectorAll('.' + className.addToService)
+    attachAddServiceEvent();
+
+    /* Perform the add to fav service function */
+    attachAddToFavServiceEvent();
+}
+
+
+function attachAddServiceEvent() {
+    const addToServiceBtns = document.querySelectorAll('.' + className.addToService);
+
     addToServiceBtns.forEach(btn => {
         btn.addEventListener('click', function (e) {
             e.preventDefault();
@@ -23,9 +31,10 @@ function attachServiceEvents() {
 
         })
     })
+}
 
 
-    /* Perform the add to fav service function */
+function attachAddToFavServiceEvent(){
     const addToFavServiceBtns = document.querySelectorAll('.' + className.addToFavService)
     addToFavServiceBtns.forEach(btn => {
         btn.addEventListener('click', function (e) {
@@ -43,7 +52,6 @@ function attachServiceEvents() {
                 this.classList.add('disabled');
                 this.text = BUTTON_TEXT.ADDED_TO_FAV;
             }
-
         })
     })
 }
