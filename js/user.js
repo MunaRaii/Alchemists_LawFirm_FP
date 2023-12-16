@@ -31,23 +31,11 @@ function createNewUser( userDetail ){
 /* Validate user details for login */
 function login( email, password ){
     if(validateUserDetail(email, password)){
+        store.activeUserId 
         redirectToMyServicePage();
         return;
     }
     return 'Invalid user name and password';
-}
-
-/* Check the provided user detail exist in system */
-function validateUserDetail( email, password ){
-    const allExistingUsers = getAllUsers();
-    return allExistingUsers.some( user => {
-        if(user.email === email && user.password === password){
-            store.activeUserId = user.id;
-            updateStoreInLocalStorage();
-            return true;
-        }
-        return false;
-    });
 }
 
 
@@ -81,7 +69,17 @@ function getLoginedUserId(){
 };
 
 
-
+/* Check the provided user detail exist in system */
+function validateUserDetail( email, password ){
+    const allExistingUsers = getAllUsers();
+    return allExistingUsers.some( user => {
+        if(user.email === email && user.password === password){
+            store.activeUserId = user.id;
+            updateStoreInLocalStorage();
+            return true;
+        }
+    });
+}
 
 /* Provide all users info list */
 function getAllUsers(){
