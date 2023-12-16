@@ -12,4 +12,4 @@ function restoreFromLocalStorage(){
 };
 
 //Restore data from local storage
-restoreFromLocalStorage();
+// restoreFromLocalStorage();
