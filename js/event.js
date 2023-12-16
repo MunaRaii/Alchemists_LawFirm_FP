@@ -19,7 +19,6 @@ function attachAddServiceEvent() {
                 return;
             }
 
-
             const serviceId = this.getAttribute('data-service-id');
             const userId = getLoginedUserId();
 
@@ -28,7 +27,6 @@ function attachAddServiceEvent() {
                 this.classList.add('disabled');
                 this.text = BUTTON_TEXT.ADDED_SERVICE;
             }
-
         })
     })
 }

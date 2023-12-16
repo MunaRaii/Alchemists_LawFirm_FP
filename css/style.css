@@ -231,22 +231,27 @@ h1 {
     padding: 5% 8%;
 }
 
-.service {
+.service-container .service-wrapper .container .service {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.service h1 {
+.service-container .service-wrapper .container .service h1{
     color: #aa9166;
-    font-size: 4rem;
+    font-size: 3rem;
     letter-spacing: 2px;
 }
 
 @media screen and (max-width:768px) {
+    .service-container .service-wrapper .container .service h1 {
+        font-size: 2rem;
+    }
     .cards {
         grid-template-columns: repeat(2, 1fr);
-
+    }
+    .service {
+        padding: 20px;
     }
 
 }
@@ -255,10 +260,6 @@ h1 {
     .cards {
         grid-template-columns: repeat(1, 1fr);
 
-    }
-
-    h1 {
-        font-size: 2rem;
     }
 
 }

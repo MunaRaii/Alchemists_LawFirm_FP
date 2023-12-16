@@ -4,9 +4,9 @@
 function getAddServiceBtn(serviceId = null) {
     const userId = getLoginedUserId();
     if(isSubscribedService(userId, serviceId)){
-        return `<a href="#" class="btn btn-primary ${className.addToService} disabled">${BUTTON_TEXT.ADDED_SERVICE}</a>`;
+        return `<a href="#" class="btn btn-secondary ${className.addToService} disabled">${BUTTON_TEXT.ADDED_SERVICE}</a>`;
     }
-    return `<a href="#" class="btn btn-primary ${className.addToService}" data-service-id="${serviceId}">${BUTTON_TEXT.ADD_SERVICE}</a>`;
+    return `<a href="#" class="btn btn-secondary ${className.addToService}" data-service-id="${serviceId}">${BUTTON_TEXT.ADD_SERVICE}</a>`;
 }
 
 

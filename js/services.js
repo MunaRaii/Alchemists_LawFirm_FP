@@ -41,14 +41,14 @@ function addToFavService( userId, serviceId ){
     return false;
 }
 
-function removeFav( userId, ServiceId){
-    if(isStoreExist() && isUserExist( userId)){
-        store.users[userId].favServices =  store.users[userId].favServices.filter( storedServiceId => storedServiceId !== serviceId);
-        updateStoreInLocalStorage();
-        return true;
-    }
-    return false;
-}
+// function removeFav( userId, ServiceId){
+//     if(isStoreExist() && isUserExist( userId)){
+//         store.users[userId].favServices =  store.users[userId].favServices.filter( storedServiceId => storedServiceId !== serviceId);
+//         updateStoreInLocalStorage();
+//         return true;
+//     }
+//     return false;
+// }
 
 
 function isFavService( userId, serviceId ){
