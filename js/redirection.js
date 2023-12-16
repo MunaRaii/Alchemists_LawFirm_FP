@@ -13,3 +13,7 @@ function redirectToHomePage(){
 function redirectToServicePage(){
     window.location.href = SITE_PAGES.SERVICES;
 }
+
+function redirectToMyServicePage(){
+    window.location.href = SITE_PAGES.MY_SERVICES;
+}

@@ -133,21 +133,24 @@
 
 
     <script src="js/constants.js"></script>
+    <script src="js/local-storage.js"></script>
     <script src="js/utils.js"></script>
     <script src="js/user.js"></script>
     <script src="js/services.js"></script>
     <script src="js/template-generator.js"></script>
     <script src="js/redirection.js"></script>
     <script src="js/event.js"></script>
+    <script src="js/redirection.js"></script>
 
     <script>
         document.addEventListener("DOMContentLoaded", function () {
+            debugger;
             const myServicesSection = document.getElementById('my-services');
             const userId = getLoginedUserId();
 
             if(!userId){
                 redirectToLoginPage();
-                retrun;
+                return;
             }
 
             if (myServicesSection && userId) {

@@ -1,15 +1,19 @@
-const LocalStorageKey= 'globalStore';
+const localStorageKey= 'globalStore';
 
 function updateStoreInLocalStorage(){
-    localStorage.setItem(LocalStorageKey, store);
+    const {services, ...rest} = store;
+    localStorage.setItem(localStorageKey, JSON.stringify(rest));
 }
 
 function restoreFromLocalStorage(){
-    const store = localStorage.setItem(LocalStorageKey, store);
-    if(isStoreExist){
-        window.store = store;
+    const previousStateStore = JSON.parse(localStorage.getItem(localStorageKey));
+    const {services} = defaultStore;
+    if(previousStateStore){
+        store = {...previousStateStore, services};
+    }else{
+        store = defaultStore;
     }
 };
 
 //Restore data from local storage
-// restoreFromLocalStorage();
+restoreFromLocalStorage();

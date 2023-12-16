@@ -1,7 +1,9 @@
 /** 
  * Global store available in all over the site
  */
-let store = {
+let store;
+
+let defaultStore = {
     services: {
         "uszsmadofre": {
             id: "uszsmadofre",
@@ -31,6 +33,13 @@ let store = {
             title: "Marriage Agreement",
             description: "Tailored Marriage Agreements: Expertly crafted legal documents ensuring clarity and protection, fostering a strong foundation for a lasting union."
         },
+        "lz2s4gupbt": {
+            id: "lz2s4gupbt",
+            imgUrl: "https://images.unsplash.com/photo-1522230895200-b681389386d0?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+            imgAltText: "image alt text",
+            title: "New service",
+            description: "Tailored Marriage Agreements: Expertly crafted legal documents ensuring clarity and protection, fostering a strong foundation for a lasting union."
+        },
     },
     users: {
         "7z0r5o1t9dr": {
@@ -45,7 +54,7 @@ let store = {
 };
 
 // let BASE_URL= location.host+'/';
-let BASE_URL= 'https://automatic-spoon-7v947qjq6wjv2p6pj-5500.app.github.dev/';
+let BASE_URL= 'https://automatic-spoon-7v947qjq6wjv2p6pj-5501.app.github.dev/';
 
 let SITE_PAGES = {
     LOGIN: BASE_URL+'login.html',
@@ -53,6 +62,7 @@ let SITE_PAGES = {
     FAV: BASE_URL+'favrite.html',
     HOME: BASE_URL+'index.html',
     SERVICES: BASE_URL+'services.html',
+    MY_SERVICES: BASE_URL+'my-services.html',
 };
 
 let BUTTON_TEXT = {

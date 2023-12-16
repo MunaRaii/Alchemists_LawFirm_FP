@@ -217,8 +217,25 @@
     <script src="js/user.js"></script>
     <script src="js/services.js"></script>
     <script src="js/template-generator.js"></script>
+    <script src="js/event.js"></script>
+    <script src="js/local-storage.js"></script>
+    <script src="js/local-storage.js"></script>
+    <script src="js/redirection.js"></script>
 
-    <script src="js/main.js"></script>
+    
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const selectedDom = document.getElementById('home-service');
+
+            if (selectedDom) {
+                const services = getAllServices();
+                const servicesTemplate = getServicesTemplate(services);
+                selectedDom.innerHTML = servicesTemplate;
+                attachServiceEvents();
+            }
+        });
+    </script>
 
 </body>
 

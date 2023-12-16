@@ -1,27 +1,29 @@
+function isSubscribedService( userId, serviceId ){
+    if(isStoreExist() && isUserExist( userId)){
+        return store.users[userId].services.includes(serviceId);
+    }
+    return false;
+}
+
+
 /** 
  * Add login user in service
  */
 function addToMyService( userId, serviceId ){
     if(isStoreExist() && isUserExist( userId)){
         store.users[userId].services.push(serviceId);
+        updateStoreInLocalStorage();
         return true;
     }
     return false;
 }
 
-
+/* Remove user service */
 function removeService( userId, serviceId ){
     if(isStoreExist() && isUserExist( userId)){
         store.users[userId].services =  store.users[userId].services.filter( storedServiceId => storedServiceId !== serviceId);
+        updateStoreInLocalStorage();
         return true;
-    }
-    return false;
-}
-
-
-function isSubscribedService( userId, serviceId ){
-    if(isStoreExist() && isUserExist( userId)){
-        return store.users[userId].services.includes(serviceId);
     }
     return false;
 }
@@ -33,6 +35,7 @@ function isSubscribedService( userId, serviceId ){
 function addToFavService( userId, serviceId ){
     if(isStoreExist() && isUserExist( userId)){
         store.users[userId].favServices.push(serviceId);
+        updateStoreInLocalStorage();
         return true;
     }
     return false;
@@ -41,6 +44,7 @@ function addToFavService( userId, serviceId ){
 function removeFav( userId, ServiceId){
     if(isStoreExist() && isUserExist( userId)){
         store.users[userId].favServices =  store.users[userId].favServices.filter( storedServiceId => storedServiceId !== serviceId);
+        updateStoreInLocalStorage();
         return true;
     }
     return false;

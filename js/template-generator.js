@@ -13,9 +13,9 @@ function getAddServiceBtn(serviceId = null) {
 function getAddFavServiceBtn(serviceId = null) {
     const userId = getLoginedUserId();
     if (isFavService(userId, serviceId)) {
-        return `<a href="#" class="btn btn-secondary ${className.addToFavService} disabled" >${BUTTON_TEXT.ADDED_TO_FAV}</a>`;
+        return `<a href="#" class="btn btn-secondary ${className.addToFavService} disabled" ><i class="bi bi-heart-fill"></i>${BUTTON_TEXT.ADDED_TO_FAV}</a>`;
     }
-    return `<a href="#" class="btn btn-secondary ${className.addToFavService}" data-service-id="${serviceId}">${BUTTON_TEXT.ADD_TO_FAV}</a>`;
+    return `<a href="#" class="btn btn-secondary ${className.addToFavService}" data-service-id="${serviceId}"><i class="bi bi-heart-fill"></i>${BUTTON_TEXT.ADD_TO_FAV}</a>`;
 }
 
 
