@@ -1,0 +1,119 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.about{
+    width: 100%;
+    height: 100vh;
+    background-color: #121518;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about .content img{
+    height: auto;
+    width: 600px;
+    max-width: 100%;
+}
+
+.text{
+    width: 550px;
+    max-width: 100%;
+    padding: 0 10px;
+}
+
+.content{
+    width: 1280px;
+    max-width: 95%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.text h1{
+    color: #aa9166;
+    font-size: 70px;
+    margin-bottom: 20px;
+    text-transform: capitalize;
+}
+
+.text h5{
+    color: white;
+    font-size: 25px;
+    margin-bottom: 20px;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+}
+
+.text p{
+    color: #666;
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: 1px;
+    margin-bottom: 45px;
+}
+
+.text p.hidden{
+    display: none;
+}
+
+.about .content .text button{
+    padding: 15px 35px;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #fff;
+    background: #aa9166;
+    border-radius: 0;
+}
+
+.about .content .text button:hover{
+    background: #aa9166;
+    color:#121518;
+    transition: .4s;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 768px){
+    .about{
+        width: 100%;
+        height: auto;
+        padding: 70px 0px;
+    }
+    .about .content .text h1{
+        font-size: 34px;
+    }
+    .about .content .text h5{
+        font-size: 22px;
+    }
+    .about .content .text p{
+        font-size: 20px;
+    }
+    .about .content img{
+        margin-bottom: 35px;
+    }
+}
+
+@media screen and (max-width: 576px){
+    .about .content .text h1{
+        font-size: 30px;
+    }
+    .about .content .text h5{
+        font-size: 20px;
+    }
+    .about .content .text p{
+        font-size: 18px;
+    }
+    .about .content img{
+        margin-bottom: 35px;
+    }
+    .text h1{
+        font-size: 60px;
+    }
+}

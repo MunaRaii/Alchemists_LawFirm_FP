@@ -12,10 +12,13 @@
 
     <!-- CSS Link -->
     <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/login.css">
+    <link rel="stylesheet" href="./css/aboutus.css">
+
+    <!-- fontawsome link -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
 
-    <title>User Login</title>
+
+    <title>Edgar Chana Law</title>
 </head>
 
 <body>
@@ -34,7 +37,7 @@
                         <a class="nav-link" aria-current="page" href="index.html">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="aboutus.html">About us</a>
+                        <a class="nav-link active" href="aboutus.html">About us</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="services.html">Services</a>
@@ -52,53 +55,43 @@
                         <a class="nav-link" href="contact.html">Contact Us</a>
                     </li>
                 </ul>
-                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                    <li class="nav-but">
-                        <a class="btn btn-outline-light" href="#">Login</a>
+                <div id="loginButtons" class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-but" id="loginButton">
+                        <a class="btn btn-outline-light" href="login.html">Login</a>
                     </li>
-                </ul>
+                    <li> <p id="welcomeMessage" style="display: none;" >Welcome, <span id="welcomeName" style="display: none;"></span>!</p>
+                    </li>
+                    <li class="nav-but" id="logoutButton" style="display: none;">
+                        <a class="btn btn-outline-light" href="#" onclick="logout()">Logout</a>
+                    </li>        
+                </div>
             </div>
         </div>
     </nav>
 
-    <!-- Login Section -->
-
-    <div class="form-wrapper">
-
-        <!-- Form for user login -->
-        <form id="loginForm">
-
-            <h2>Welcome Back!</h2>
-            <p class="login-msg">Kindly log in to access your secure legal account.
-            </p>
-
-            <!-- Progress Bar -->
-            <div class="progress-wrapper">
-                <div class="progress-bar" id="progressBar"></div>
+    <!-- About Us Section -->
+    <section class="about">
+        <div class="content">
+            <img src="img/aboutus.jpeg" alt="About us image">
+            <div class="text">
+                <h1>About Us</h1>
+                <h5>A Boutique Law Firm</h5>
+                <p>
+                    Edgar Chana Law Professional Corporation is a boutique law firm that was founded in 2013 to provide
+                    high quality estates and trust planning services
+                    at more reasonable rates. Ambie Edgar-Chana and Aaron Edgar had both previously established their
+                    practices at large Bay Street law firms and sought
+                    a better way to practice law, for their clients and for themselves.
+                </p>
+                <p class="hidden">
+                    Edgar Chana Law Professional Corporation practices solely in trusts, wills, and estates. 
+                    The firm assists Canada’s largest banks and trust companies, financial advisors, financial planners, accountants, and their clients.
+                    Edgar Chana Law Professional Corporation practices solely in trusts, wills, and estates. 
+                    The firm assists Canada’s largest banks and trust companies, financial advisors, financial planners, accountants, and their clients.
+                </p>
             </div>
-
-            <!-- Input field for email -->
-            <label for="email">Email:</label>
-            <input type="email" id="email" placeholder="Enter Email" required>
-
-            <!-- Input field for password -->
-            <label for="password">Password:</label>
-            <input type="password" id="password" placeholder="Enter Password" required>
-
-            <!-- Button to trigger login function -->
-            <button type="button" onclick="submitLoginForm()">Login</button>
-
-            <div class="register">
-                <!-- Link to the registration page -->
-                <p class="register-link">Don't have an account? <a href="register.html">Register</a></p>
-
-                <!-- Link to the main page -->
-                <p class="back-to-home">Back to main page: <a href="index.html">Home</a></p>
-            </div>
-
-        </form>
-
-    </div>
+        </div>
+    </section>
 
     <!-- Footer Section -->
     <div class="footer">
@@ -155,7 +148,7 @@
         </div>
     </div>
 
-
+    <script src="js/about-us.js"></script>
     <script src="js/constants.js"></script>
     <script src="js/utils.js"></script>
     <script src="js/user.js"></script>
@@ -165,12 +158,6 @@
     <script src="js/local-storage.js"></script>
     <script src="js/redirection.js"></script>
     <script src="js/index.js"></script>
-
-    <!-- Link to the external JavaScript file for additional functionality -->
-    <script src="js/login.js"></script>
-    <script src="js/index.js"></script>
-
-
 </body>
 
 </html>

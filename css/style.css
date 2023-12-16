@@ -12,7 +12,7 @@ h1 {
     color: #121518;
 }
 
-/* Header CSS */
+/* Navigation CSS */
 
 .navbar .navbar-nav .nav-item a {
     padding: 15px;
@@ -193,7 +193,6 @@ h1 {
 .about .about-text p {
     font-size: 16px;
 }
-
 .about .about-text a.btn {
     position: relative;
     margin-top: 15px;
@@ -244,60 +243,6 @@ h1 {
     letter-spacing: 2px;
 }
 
-.service .cards {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
-    margin-top: 90px;
-}
-
-.service .card {
-    height: 300px;
-    width: 320px;
-    background-color: #aa9166;
-    padding: 3% 8%;
-    border: 0.2px solid rgba(144, 226, 174, 00.2);
-    border-radius: 10px;
-    transition: 0.6s;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    position: relative;
-    overflow: hidden;
-
-}
-
-.service .card i {
-    color: rgb(78, 77, 77);
-    margin-top: 15px;
-    margin-bottom: 20px;
-    font-size: 2.8rem;
-
-}
-
-.service .card h2 {
-    color: #fff;
-    font-size: 20px;
-    font-weight: 600;
-    letter-spacing: 1px;
-
-}
-
-.service .card li {
-    text-align: left;
-    width: 100%;
-    margin: 12px 0;
-    color: #fff;
-    font-size: 12px;
-}
-
-.service .card:hover {
-    color: black;
-    background-color: #aa9166;
-    transform: translateY(-8px);
-    border-color: #fff;
-}
-
 @media screen and (max-width:768px) {
     .cards {
         grid-template-columns: repeat(2, 1fr);
@@ -319,11 +264,28 @@ h1 {
 }
 
 
+.service-container {
+    /* min-height: 100vh;
+    width: 100%; */
+    background-color: #121518;
+}
+.service .card {
+    background-color: #aa9166;
+    color: #fff;
+}
+
+.service .img{
+    padding-bottom: 55%;
+    background-size: cover;
+    background-position: center;
+}
+
 /* Footer CSS */
 
 .footer {
     position: relative;
     padding: 2rem;
+    padding-top: 30px;
     background: #121518;
     color: #ffffff;
 }
@@ -344,6 +306,11 @@ h1 {
     font-size: 25px;
     font-weight: 600;
     color: #aa9166;
+}
+
+.footer .footer-contact p a{
+    color: #999999;
+    text-decoration: none;
 }
 
 .footer .footer-link a {
@@ -384,6 +351,7 @@ h1 {
 }
 
 .footer .copyright p a {
+    text-decoration: none;
     color: #aa9166;
     font-weight: 500;
 }
@@ -391,7 +359,6 @@ h1 {
 .footer .copyright p a:hover {
     color: #ffffff;
 }
-
 
 @media (max-width: 768px) {
 

@@ -37,16 +37,11 @@ function submitForm() {
 
    
     // Store user information in local storage (not secure for production)
-    var user = {
-        name: name,
-        email: email,
-        password: password
+    const user = {
+        name,
+        email,
+        password
     };
 
-    localStorage.setItem('user', JSON.stringify(user));
-
-    alert('Registered successfully!');
-
-    // Redirect to login page or perform other actions
-    window.location.href = 'headerfooter.html';
+    createNewUser(user);
 }
