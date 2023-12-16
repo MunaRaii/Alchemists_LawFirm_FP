@@ -78,17 +78,8 @@
     text-decoration: underline;
 }
 
-.progress-wrapper {
-    width: 80%;
-    margin: 20px 0px 20px 15%;
-}
-
-.form-wrapper form .progress-bar {
-    height: 10px;
-    background-color: #1c1d1e;
-    width: 0;
-    /* Initial width */
-    transition: width 0.3s ease-in-out;
+.progress-bar{
+   background-color: #aa9166;
 }
 
 /* Media query for tablet */

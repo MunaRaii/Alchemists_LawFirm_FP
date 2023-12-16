@@ -1,9 +1,35 @@
 // script.js
+
+document.addEventListener("DOMContentLoaded", function () {
+    const progressBar = document.getElementById('progress-bar');
+    const progressSelector = document.querySelectorAll('.c-progress');
+    progressSelector.forEach(element => {
+
+        element.addEventListener('change', function(){
+            const changeInputs = []
+
+            progressSelector.forEach( element=>{
+                if(element.value){
+                    changeInputs.push(element.value);
+                }
+            })
+
+            const progressPercentage = changeInputs.length * 25;
+            progressBar.style.width = progressPercentage+"%";
+        })
+        
+    });
+});
+
 function submitForm() {
     var name = document.getElementById('name').value;
     var email = document.getElementById('email').value;
     var password = document.getElementById('password').value;
     var confirmPassword = document.getElementById('confirmPassword').value;
+
+
+
+
 
     // Simple validation
     if (!name || !email || !password || !confirmPassword) {
