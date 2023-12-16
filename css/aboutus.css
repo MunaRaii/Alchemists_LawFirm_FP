@@ -62,7 +62,7 @@
     display: none;
 }
 
-button{
+.about .content .text button{
     padding: 15px 35px;
     font-size: 18px;
     font-weight: 500;
@@ -73,7 +73,7 @@ button{
     border-radius: 0;
 }
 
-button:hover{
+.about .content .text button:hover{
     background: #aa9166;
     color:#121518;
     transition: .4s;

@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", function () {
         function toggleVisibility() {
             if (secondParagraph.style.display === 'none') {
                 secondParagraph.style.display = 'block';
-                learnMoreButton.textContent = 'Show Less';
+                learnMoreButton.style.display = 'none';
             } else {
                 secondParagraph.style.display = 'none';
                 learnMoreButton.textContent = 'Show More';
