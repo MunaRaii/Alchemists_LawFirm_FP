@@ -321,7 +321,7 @@ h1 {
 
 .footer {
     position: relative;
-    padding: 2rem;
+    padding-top: 180px;
     background: #121518;
     color: #ffffff;
 }
@@ -344,6 +344,11 @@ h1 {
     color: #aa9166;
 }
 
+.footer .footer-contact p a{
+    color: #999999;
+    text-decoration: none;
+}
+
 .footer .footer-link a {
     display: block;
     margin-bottom: 10px;
@@ -363,6 +368,7 @@ h1 {
     color: #aa9166;
     letter-spacing: 1px;
 }
+
 .footer .footer-contact .footer-social a{
     color: #aa9166 ;
     letter-spacing: 1rem;
@@ -382,6 +388,7 @@ h1 {
 }
 
 .footer .copyright p a {
+    text-decoration: none;
     color: #aa9166;
     font-weight: 500;
 }
@@ -389,7 +396,6 @@ h1 {
 .footer .copyright p a:hover {
     color: #ffffff;
 }
-
 
 @media (max-width: 768px) {
 
