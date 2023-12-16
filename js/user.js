@@ -1,7 +1,7 @@
 
 /** 
  * Create new user
- * user object should have name, email and password to create password
+ * user object should have name, email and password are required to create new account
  * eg
  * {
  *  name: 'muna',
@@ -10,8 +10,8 @@
  * }
  */
 function createNewUser( userDetail ){
-    const {name ='', email='', password=''} = userDetail; 
-    if( name && email && password ){
+    const {name ='', email='', password=''} = userDetail;  //This
+    if( name && email && password ){ //This
         const id = generateID();
         const user = {
             ...userDetail,
@@ -23,7 +23,7 @@ function createNewUser( userDetail ){
         store.users[id] = user;
         updateStoreInLocalStorage();
         redirectToLoginPage();
-    }
+    }//This Lines can we remove aftter merge the login and signup page
     return false;
 }
 
